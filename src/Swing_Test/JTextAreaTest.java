@@ -5,7 +5,7 @@ import java.awt.*;
 
 /*
  * @author Hive
- * Description:
+ * Description:JTextArea Test
  * Date: 2021/1/4 17:44
  */
 

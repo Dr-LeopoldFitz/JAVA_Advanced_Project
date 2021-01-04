@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 
 /*
  * @author Hive
- * Description:
+ * Description:JTextField Test
  * Date: 2021/1/4 17:27
  */
 public class JTextFieldTest extends JFrame{
