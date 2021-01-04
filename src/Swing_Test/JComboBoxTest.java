@@ -34,14 +34,6 @@ class MyComboBox extends AbstractListModel<String> implements ComboBoxModel<Stri
     String selected=null;
     String[] test={"身份证","军人证","学生证","工作证"};
 
-    //实现AbstractListModel中abstract方法 getSize 和 getElementAt
-    public int getSize(){
-        return test.length;
-    }
-    public String getElementAt(int index){
-        return test[index];
-    }
-
     //实现ComboBoxModel中abstract方法 setSelectedItem(Object) 和 getSelectedItem()
     public void setSelectedItem(Object item){
         selected=(String)item;
@@ -50,6 +42,17 @@ class MyComboBox extends AbstractListModel<String> implements ComboBoxModel<Stri
         return selected;
     }
 
+    //法2:自定义这个类除了实现该接口之外，还可以继承AbstractListModel类
+    //实现AbstractListModel中abstract方法 getSize 和 getElementAt
+    //此程序中未使用该方式，使用的是法1
+    public int getSize(){
+        return test.length;
+    }
+    public String getElementAt(int index){
+        return test[index];
+    }
+
+    //自定义函数
     public int getIndex(){
         for(int i=0;i< test.length;i++){
             if(test[i].equals(getSelectedItem())){
