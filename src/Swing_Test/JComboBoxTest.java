@@ -15,6 +15,7 @@ public class JComboBoxTest extends JFrame{
 
     public JComboBoxTest(){
         setSize(new Dimension(300,180));
+        //同setSize(300,180);
         setTitle("JComboBox Test");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         Container con=getContentPane();
