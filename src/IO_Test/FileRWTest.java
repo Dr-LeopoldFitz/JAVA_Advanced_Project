@@ -49,13 +49,13 @@ public class FileRWTest extends JFrame {
             openButton.setText("Write File");
             openButton.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent args0) {
-                    File file = new File("src/booktext/FileRWTest.txt");
+                    File file = new File("src/booktext/FileRW_Test.txt");
                     try {
                         FileWriter out = new FileWriter(file);// 创建FileWriter对象
                         String s = jTextArea.getText();// 获取文本域中文本
                         out.write(s); // 将信息写入磁盘文件
                         out.close(); // 将流关闭
-                        JOptionPane.showMessageDialog(null, "写入文件'FileRWTest.txt'成功!");
+                        JOptionPane.showMessageDialog(null, "写入文件'FileRW_Test.txt'成功!");
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -71,14 +71,14 @@ public class FileRWTest extends JFrame {
             closeButton.setText("Read File");
             closeButton.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent args0) {
-                    File file = new File("src/booktext/FileRWTest.txt");
+                    File file = new File("src/booktext/FileRW_Test.txt");
                     try {
                         FileReader in = new FileReader(file);// 创建FileReader对象
                         char[] read_content = new char[1024]; // 创建char型数组
                         int len = in.read(read_content); // 将字节读入数组
                         jTextArea.setText(new String(read_content, 0, len));// 设置文本域的显示信息
                         in.close(); // 关闭流
-                        JOptionPane.showMessageDialog(null, "读取文件'FileRWTest.txt'成功!");
+                        JOptionPane.showMessageDialog(null, "读取文件'FileRW_Test.txt'成功!");
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
