@@ -19,7 +19,7 @@ public class ZipOutputStreamTest {
             //fl[2]=src\bookinputfile\FilesToCompress\testfolder
             for (File file : fl) {
                 if(file.isDirectory()){
-                    zip(out, file, base +"/"+ file.getName());//递归
+                    zip(out, file, base +File.separator+ file.getName());//递归
                 }
                 else{
                     zip(out, file, base);
@@ -27,7 +27,13 @@ public class ZipOutputStreamTest {
             }
         }
         else {
-            out.putNextEntry(new ZipEntry(base+File.separator+f.getName())); // 创建新的进入点
+            ZipEntry next=new ZipEntry(base+File.separator+f.getName());
+            /* System.out.println(next);
+             * FilesToCompress\File1.txt
+             * FilesToCompress\File2.txt
+             * FilesToCompress\testfolder\File3.txt
+             */
+            out.putNextEntry(next); // 创建新的进入点
             FileInputStream in = new FileInputStream(f);
             int b;
             while ((b = in.read()) != -1) { // 如果没有到达流的尾部
