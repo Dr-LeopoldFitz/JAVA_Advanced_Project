@@ -51,9 +51,3 @@ public class Test_Encryption {
     }
 
 }
-/*
- * 加密后：
- * 亘奻cb烫冨厃
- * 明文：
- * 今天10点出发
- */
