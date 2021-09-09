@@ -7,7 +7,6 @@ package Multithreading_Test;
  */
 import java.awt.*;
 import java.net.*;
-
 import javax.swing.*;
 
 public class SwingAndThread extends JFrame {
