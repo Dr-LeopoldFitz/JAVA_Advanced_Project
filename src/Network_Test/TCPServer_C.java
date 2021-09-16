@@ -18,7 +18,7 @@ public class TCPServer_C extends JFrame {
     private JTextField portField;
     private JTextField hostField;
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
