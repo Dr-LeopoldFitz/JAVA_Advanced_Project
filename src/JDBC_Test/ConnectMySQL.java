@@ -14,6 +14,10 @@ public class ConnectMySQL { // 创建类Conn
 
     public Connection getConnection() { // 建立返回值为Connection的方法
         try { // 加载数据库驱动类
+            /*
+            * 通过java.lang包的静态方法forName()来加载JDBC驱动程序，如果加载
+            * 失败会抛出ClassNotFoundException异常。
+            * */
             Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("数据库驱动加载成功");
         } catch (ClassNotFoundException e) {
