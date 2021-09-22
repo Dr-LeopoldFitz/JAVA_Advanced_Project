@@ -4,7 +4,7 @@ import java.sql.*;
 
 /**
  * @author Hive
- * Description:在主方法中将数据表Student中的数据检索出来
+ * Description:在主方法中将数据表Student中的数据检索出来，顺序查询
  * Date: 2021/9/21 22:19
  */
 
