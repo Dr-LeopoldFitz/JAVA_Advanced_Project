@@ -20,7 +20,7 @@ public class WindowFocusTest extends JFrame {
         setTitle("捕获窗体焦点事件");
         setBounds(100, 100, 500, 375);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        
+
         addWindowFocusListener(new WindowFocusListener(){
             public void windowGainedFocus(WindowEvent e) {// 窗口获得焦点时被触发
                 System.out.println("窗口获得了焦点！");
