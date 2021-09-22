@@ -21,4 +21,6 @@ Java HotSpot(TM) 64-Bit Server VM (build 16.0.2+7-67, mixed mode, sharing)
 
 mysql  Ver 8.0.26-0ubuntu0.20.04.2 for Linux on x86_64 ((Ubuntu))
 
+IntelliJ IDEA 2021.1.2 (Ultimate Edition)
+
 ```
