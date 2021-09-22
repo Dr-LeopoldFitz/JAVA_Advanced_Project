@@ -1,4 +1,4 @@
-package SwingPlus_Test.JTable_Test;
+package Swing_Test.JTable_Test;
 
 import java.awt.*;
 import java.awt.event.*;
